@@ -10,7 +10,7 @@ bot.on('ready',()=> {
 
 
 {
-bot.on("message", async message =>{
+
 
 
     
@@ -60,7 +60,6 @@ bot.on('message', msg =>{
     if (msg.content === 'Me da um pedacinho'){
 msg.reply('Pede para a prof  de etica iqual ao Pedrão ksksk')}
 
-});
 });
 };
 
