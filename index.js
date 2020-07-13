@@ -65,10 +65,3 @@ bot.on('message', msg =>{
 msg.reply('Pede para a prof  de etica iqual ao Pedrão ksksk')}
 })
 }
-
-
-
-
-
-
-
