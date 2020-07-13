@@ -14,7 +14,7 @@ bot.on('ready',()=> {
     if(msg.author.bot){
         return;}   
    
-bot.on('message', msg => {
+bot.on('message', message => {
     let responseObject = {
         "Sarah":"Cade ela S2",
         "Eduardo":"Deve estar atras da Yasmim",
@@ -25,14 +25,9 @@ bot.on('message', msg => {
         "Gustavo":"Eu não entendo nada que ele digita porque ele é adalfabeto",
         "Me da um pedacinho":"Peda para aprofessora de Etica igual aou Pedrão kkkk",
         "João":"Cara muito umilde e top"
-    }
-})
+    };
 
-});
+if(responseObject[message.content]){
+    message.channel.send(responseObject[message.content]);
 }
-
-bot.on('message' = msg =>{
-    if (message.content.startsWith(';ping')){
-        message.channel.send('pong');
-    }
-})
+})})};
