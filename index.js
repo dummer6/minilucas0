@@ -10,56 +10,29 @@ bot.on('ready',()=> {
 
 
 {
-
-
-
-    
-bot.on('message', msg =>{
-    if (msg.content === 'Sarah'){
-msg.reply('Cd ela s2??')}
+ bot.on('message', msg =>{
+    if(msg.author.bot){
+        return;}   
+   
+bot.on('message', msg => {
+    let responseObject = {
+        "Sarah":"Cade ela S2",
+        "Eduardo":"Deve estar atras da Yasmim",
+        "Lucas gado":"Ta locão, ta afim de tomar uma minimonocelha",
+        "Rafael":"Cd ele, não to vendo ele é muito pequeno",
+        "Tadeu":"Nada contra mas prefiro distancia",
+        "Bruno":"Aquele talarico de merda ?",
+        "Gustavo":"Eu não entendo nada que ele digita porque ele é adalfabeto",
+        "Me da um pedacinho":"Peda para aprofessora de Etica igual aou Pedrão kkkk",
+        "João":"Cara muito umilde e top"
+    }
 })
-
-bot.on('message', msg =>{
-    if (msg.content === 'Tadeu'){
-msg.reply('Nada contra mas prefiro distancia ;-;')}
-})
-
-bot.on('message', msg =>{
-    if (msg.content === 'Bruno'){
-msg.reply('Aquele talarico de merda')}
-})
-
-bot.on('message', msg =>{
-    if (msg.content === 'Rafael'){
-msg.reply('Cade ele, não to vendo ele é mt pequeno')}
-})
-
-bot.on('message', msg =>{
-    if (msg.content === 'Lucas gado'){
-msg.reply('Tá loco quer tomar uma minimonocelha ?')}
-})
-
-bot.on('message', msg =>{
-    if (msg.content === 'Gustavo'){
-msg.reply('Não entendo nada que ele fala, pq ele não sabe escrever')}
-})
-
-bot.on('message', msg =>{
-    if (msg.content === 'João'){
-msg.reply('Muito umilde mas que todo mundo aq')}
-})
-
-
-bot.on('message', msg =>{
-    if (msg.content === 'Eduardo'){
-msg.reply('Deve estar atrás da Yasmim')}
-})
-
-
-bot.on('message', msg =>{
-    if (msg.content === 'Me da um pedacinho'){
-msg.reply('Pede para a prof  de etica iqual ao Pedrão ksksk')}
 
 });
-};
+}
 
+bot.on('message' = msg =>{
+    if (message.content.startsWith(';ping')){
+        message.channel.send('pong');
+    }
+})
