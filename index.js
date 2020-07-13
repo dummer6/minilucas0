@@ -9,10 +9,7 @@ bot.on('ready',()=> {
 
 
 
-{
- bot.on('message', msg =>{
-    if(msg.author.bot){
-        return;}   
+   
    
 bot.on('message', message => {
     let responseObject = {
