@@ -83,6 +83,7 @@ bot.on("message", async message =>{
         const args = message.content.slice(config.prefix.length).trim().split(/ +/g )
         const comando = args.shift().toLowerCase();
         
+        bot.on("message", async message =>{
         if(comando === "ping" ) {
             const m = await message.channel.send("!Ping?");
             m.edit(`Ai está, o ping é de ${m.createdTimestamp - message.createdTimestamp}ms`);             
@@ -90,3 +91,4 @@ bot.on("message", async message =>{
     });
 
     })
+})
