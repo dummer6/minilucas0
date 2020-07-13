@@ -27,7 +27,7 @@ msg.reply('Cd ela s2??')}
 
 bot.on('message', msg =>{
     if (msg.content === 'Tadeu'){
-msg.reply('Nada contra mas prefiro distanci ;-;')}
+msg.reply('Nada contra mas prefiro distancia ;-;')}
 })
 
 bot.on('message', msg =>{
