@@ -10,16 +10,15 @@ bot.on('ready',()=> {
 
 
 
-
 {
 bot.on("message", async message =>{
 
     bot.on('message', msg =>{
     if(msg.author.bot){
         return;}   
-    });
     if(message.channel.type === "dm"){
         return;} 
+   
     
 bot.on('message', msg =>{
     if (msg.content === 'Sarah'){
@@ -66,6 +65,19 @@ msg.reply('Deve estar atrás da Yasmim')}
 bot.on('message', msg =>{
     if (msg.content === 'Me da um pedacinho'){
 msg.reply('Pede para a prof  de etica iqual ao Pedrão ksksk')}
+
 });
-})
+});
+});
 }
+
+bot.on("message", async message =>{
+
+    bot.on('message', msg =>{
+    if(msg.author.bot){
+        return;}   
+    
+    if(message.channel.type === "dm"){
+        return;}
+        });
+    })
