@@ -1,10 +1,8 @@
 const Discord = require('discord.js')
 const bot = new Discord.Client();
-const token = 'NzMxMTIzODcyMjQ1NzQzNjc3.XwuEYA.aKpVuirVVII167rSkZbk8QrayYU'
 const config = require("./config.json");
 
-bot.login(token)
-
+bot.login("process.env.token")
 
 bot.on('ready',()=> { 
     console.log('estou pronto para ser usado');
