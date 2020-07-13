@@ -12,9 +12,6 @@ bot.on('ready',()=> {
 {
 bot.on("message", async message =>{
 
-    bot.on('message', msg =>{
-    if(msg.author.bot){
-        return;}   
 
     
 bot.on('message', msg =>{
@@ -65,5 +62,5 @@ msg.reply('Pede para a prof  de etica iqual ao Pedrão ksksk')}
 
 });
 });
-});
-}
+};
+
