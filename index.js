@@ -4,7 +4,7 @@ bot.login(process.env.token)
 
 bot.on('ready',()=> { 
     console.log('estou pronto para ser usado');
-    bot.user.setActivity('(O nome do status aqui)', { type: 'PLAYING' })("batendo uma")
+    bot.user.setActivity("batendo uma")
 });
 
 
