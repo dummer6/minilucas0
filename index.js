@@ -15,10 +15,12 @@ bot.on('ready',()=> {
 bot.on("message", async message =>{
 
     bot.on('message', msg =>{
-    if (msg.author.bot){
+    if(msg.author.bot){
         return;}   
     });
-
+    if(message.channel.type === "dm"){
+        return;} 
+    
 bot.on('message', msg =>{
     if (msg.content === 'Sarah'){
 msg.reply('Cd ela s2??')}
