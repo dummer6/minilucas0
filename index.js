@@ -83,9 +83,10 @@ bot.on("message", async message =>{
         const args = message.content.slice(config.prefix.length).trim().split(/ +/g )
         const comando = args.shift().toLowerCase();
         
-        if(comando === "ping") {
-            const m = await message.channel.send("sx!ping");
-            m.edit(`:ping_pong: Pong!\nA latência é ${m.createdTimestamp - message.createdTimestamp}ms.\nA latência da API é: ${Math.round(client.ws.ping)}ms`);
-          }
-    })
-})
+        if(comando === ";ping" ) {
+            const m = await message.channel.send("Ping?");
+            m.edit(`Ai está, o ping é de ${m.createdTimestamp - message.createdTimestamp}ms E o meu ping por curiosidade é  ${Math.round(client.ping)}ms`);             
+        }
+    });
+
+    });
