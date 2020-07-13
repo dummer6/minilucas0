@@ -1,6 +1,7 @@
 const Discord = require('discord.js')
 const bot = new Discord.Client();
 bot.login(process.env.token)
+const config = require("./config.jason")
 
 bot.on('ready',()=> { 
     console.log('estou pronto para ser usado');
@@ -11,7 +12,9 @@ bot.on('ready',()=> {
 
 
 {
-bot.on('message', msg =>{
+bot.on("message", async message =>{
+
+    bot.on('message', msg =>{
     if (msg.author.bot){
         return;}   
     });
@@ -61,5 +64,6 @@ msg.reply('Deve estar atrás da Yasmim')}
 bot.on('message', msg =>{
     if (msg.content === 'Me da um pedacinho'){
 msg.reply('Pede para a prof  de etica iqual ao Pedrão ksksk')}
+});
 })
 }
