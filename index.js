@@ -1,7 +1,6 @@
 const Discord = require('discord.js')
 const bot = new Discord.Client();
 bot.login(process.env.token)
-const config = require("./config.jason")
 
 bot.on('ready',()=> { 
     console.log('estou pronto para ser usado');
@@ -70,25 +69,3 @@ msg.reply('Pede para a prof  de etica iqual ao Pedrão ksksk')}
 });
 });
 }
-
-bot.on("message", async message =>{
-
-    bot.on('message', msg =>{
-    if(msg.author.bot){
-        return;}   
-    
-    if(message.channel.type === "dm"){
-        return;}
-     
-        const args = message.content.slice(config.prefix.length).trim().split(/ +/g )
-        const comando = args.shift().toLowerCase();
-        
-        bot.on("message", async message =>{
-        if(comando === "ping" ) {
-            const m = await message.channel.send("!Ping?");
-            m.edit(`Ai está, o ping é de ${m.createdTimestamp - message.createdTimestamp}ms`);             
-        }
-    });
-
-    })
-})
