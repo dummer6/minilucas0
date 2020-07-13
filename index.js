@@ -15,9 +15,7 @@ bot.on("message", async message =>{
     bot.on('message', msg =>{
     if(msg.author.bot){
         return;}   
-    if(message.channel.type === "dm"){
-        return;} 
-   
+
     
 bot.on('message', msg =>{
     if (msg.content === 'Sarah'){
