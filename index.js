@@ -15,9 +15,7 @@ bot.on('ready',()=> {
 {
 bot.on('message', msg =>{
     if (msg.author.bot){
-        return;}
-    if (msg.channel.type === "dm"){
-        return}    
+        return;}   
     });
 
 bot.on('message', msg =>{
@@ -68,13 +66,6 @@ msg.reply('Pede para a prof  de etica iqual ao Pedrão ksksk')}
 })
 }
 
-
-
-bot.on("message", async message => {
-
-
-    
-});
 
 
 
