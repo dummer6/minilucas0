@@ -26,7 +26,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
 if (message.content.startsWith("!roleta")){
-    randomNumber = Math.floor(Math.random() * (10 - 1) + 1);
+    randomNumber = Math.floor(Math.random() * (2 - 1) + 1);
 if(randomNumber == 2){
     message.reply("Se fudeu:(" )
 } 
