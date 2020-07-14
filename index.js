@@ -21,20 +21,21 @@ bot.on('message', message => {
         "Me da um pedacinho" : "Peda para aprofessora de Etica igual aou Pedrão kkkk",
         "João" : "Cara muito umilde e top"
     };
+});
+
 
 if(responseObject[message.content]){
     message.channel.send(responseObject[message.content]);
 }
-});
 
-if(message.content.startsWith("!roleta")){
-    randomNumber = Math.floor(Math.random() * (10 - 1) + 1);
-if(randomNumber == 2){
-    message.reply("Se fudeu:(")
+if (message.content.startsWith ("!roleta")){
+    randomNumber = Math.floor(Math.random() * (2 - 1) + 1);
+if(randomNumber == 1){
+    message.reply("Se fudeu:( ");
 } 
 
 else{
-    message.reply("Se deu bem ;)");
+    message.reply("Se deu bem ;) ") 
 }
 
 }
