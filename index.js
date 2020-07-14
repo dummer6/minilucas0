@@ -26,7 +26,7 @@ bot.on('message', message => {
 
 if(responseObject[message.content]){
     message.channel.send(responseObject[message.content]);
-}
+
 
 if (message.content.startsWith ("!roleta")){
     randomNumber = Math.floor(Math.random() * (2 - 1) + 1);
@@ -38,4 +38,5 @@ else{
     message.reply("Se deu bem ;) ") 
 }
 
+}
 }
