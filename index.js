@@ -7,9 +7,7 @@ bot.on('ready',()=> {
     bot.user.setActivity("batendo uma")
 });
 
-
-
-   
+  
    
 bot.on('message', message => {
     let responseObject = {
@@ -28,3 +26,15 @@ if(responseObject[message.content]){
     message.channel.send(responseObject[message.content]);
 }
 });
+
+if (message.content.startsWith(";roleta")){
+    randomNumber = Math.floor(Math.random() * (10 - 1) + 1);
+if(randomNumber == 2){
+    message.reply("Parabens vc não se fudeu:(")
+} 
+
+else{
+    message.reply("Se fudeu ;)");
+}
+
+}
