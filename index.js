@@ -22,4 +22,3 @@ bot.on('message', message => {
         "João" : "Cara muito umilde e top"
     };
 })
-
