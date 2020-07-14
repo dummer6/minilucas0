@@ -21,22 +21,11 @@ bot.on('message', message => {
         "Me da um pedacinho" : "Peda para aprofessora de Etica igual aou Pedrão kkkk",
         "João" : "Cara muito umilde e top"
     };
-});
+})
 
-
-if(responseObject[message.content]){
-    message.channel.send(responseObject[message.content]);
-
-
-if (message.content.startsWith ("!roleta")){
-    randomNumber = Math.floor(Math.random() * (2 - 1) + 1);
-if(randomNumber == 1){
-    message.reply("Se fudeu:( ");
-} 
-
-else{
-    message.reply("Se deu bem ;) ") 
-}
-
-}
+let role = message.guild.roles.find("name" , "Admin");
+if(message.member.roles.has(hole.id) && message.content.startWith(";delete")){
+    msgDel = 10000000;
+let numberMessages = parseInt(msgDel);
+message.channel.fetchMessages({limit: numberMessages}).then(message => message.channel.bulkDelete(messages));
 }
