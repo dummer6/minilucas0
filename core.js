@@ -1,13 +1,20 @@
-const Discord = require('discord.js')
-const bot = new Discord.Client();
-bot.login(process.env.token)
+const Discord = require("discord.js");
+const bot  = new Discord.Client();
+bot.login(process.env.token);
+const prefix   = ";";
+const commands = require("./scripts/commandsReader")(prefix);
 
-bot.on('ready',()=> { 
-    console.log('estou pronto para ser usado');
-    bot.user.setActivity("batendo uma")
+bot.on("ready",()=>{
+    console.log(`Batendo uma`);
 });
 
-  
+bot.on("message",(msg)=>{
+    if(!msg.author.bot){
+        const args = msg.content.split(" ");
+        if(commands[args[0]]) commands[args[0]](bot,msg);
+    }
+});
+
 { bot.on("message", async message => {
  
     if (message.content.startsWith('Sarah')){
@@ -37,3 +44,4 @@ bot.on('ready',()=> {
    if (message.content.startsWith('Gustavo')){
             message.channel.send("Não entendo nada que ele manda porque ele é adalfabeto")}
 })}
+
