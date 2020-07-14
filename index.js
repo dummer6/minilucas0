@@ -9,6 +9,7 @@ bot.on('ready',()=> {
 
   
 { bot.on("message", async message => {
+    if(message.author.bot) return;
     let responseObject = {
         "Sarah" : "Cade ela S2",
         "Eduardo" : "Deve estar atras da Yasmim",
