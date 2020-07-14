@@ -22,11 +22,10 @@ bot.on('message', message => {
         "João" : "Cara muito umilde e top"
     };
 })
-
-let role = messages.guild.roles.find  
-const Message = MessageEmbed ("name" , "Admin")
+const Message = MessageEmbed (";delete");
+let role = message.guild.roles.find  ("name" , "Admin");
 if(message.member.roles.has(hole.id) && message.content.startWith(";delete")){
-    msgDel = 100;
+    msgDel = 10000000;
 let numberMessages = parseInt(msgDel);
 message.channel.fetchMessages({limit: numberMessages}).then(message => message.channel.bulkDelete(messages));
 }
