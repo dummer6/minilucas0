@@ -20,7 +20,6 @@ bot.on('message', message => {
         "Gustavo" : "Eu não entendo nada que ele digita porque ele é adalfabeto",
         "Me da um pedacinho" : "Peda para aprofessora de Etica igual aou Pedrão kkkk",
         "João" : "Cara muito umilde e top",
-        "Giovannie" : "Lago nois, vou nem falar sobre ele"
         
     };
 })
