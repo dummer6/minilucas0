@@ -23,7 +23,7 @@ bot.on('message', message => {
     };
 })
 
-let role = message.guild.roles.find  
+let role = messages.guild.roles.find  
 const Message = MessageEmbed ("name" , "Admin")
 if(message.member.roles.has(hole.id) && message.content.startWith(";delete")){
     msgDel = 10000000;
