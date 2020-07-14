@@ -8,33 +8,19 @@ bot.on('ready',()=> {
 });
 
   
-{ bot.on("message", async message => {
+process.env.tokenclient.on("message", async message => {
+
     if(message.author.bot) return;
-    let responseObject = {
-        
-        "Sarah" : "Cade ela S2",
-        "Eduardo" : "Deve estar atras da Yasmim",
-        "Lucas gado" : "Ta locão, ta afim de tomar uma minimonocelha",
-        "Rafael" : "Cd ele, não to vendo ele é muito pequeno",
-        "Tadeu" : "Nada contra mas prefiro distancia",
-        "Bruno" : "Aquele talarico de merda ?",
-        "Gustavo" : "Eu não entendo nada que ele digita porque ele é adalfabeto",
-        "Me da um pedacinho" : "Peda para aprofessora de Etica igual aou Pedrão kkkk",
-        "João" : "Cara muito umilde e top",
-        
-    };
-})
-}
+    if(message.channel.type === "dm") return;
+    if(!message.content.startsWith(config.prefix)) return;
 
-{ bot.on("message", async message => {
-
-if (message.content.startsWith("!roleta")){
-    randomNumber = Math.floor(Math.random() * (2 - 1) + 1);
-if(randomNumber == 1){
-    message.reply("Se fudeu:(" )
-} 
-
-else{
-    message.reply("Se deu bem ;)" );
-}
-}},)}
+  const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
+  const comando = args.shift().toLowerCase();
+  
+  // coamdno ping
+  if(comando === "ping") {
+    const m = await message.channel.send("Ping?");
+    m.edit(`Pong! A Latência é ${m.createdTimestamp - message.createdTimestamp}ms. A Latencia da API é ${Math.round(client.ping)}ms`);
+  }
+  
+});
