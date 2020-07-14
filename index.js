@@ -27,7 +27,7 @@ if(responseObject[message.content]){
 }
 });
 
-if (message.content.startsWith(";roleta")){
+if(message.content.startsWith(";roleta")){
     randomNumber = Math.floor(Math.random() * (10 - 1) + 1);
 if(randomNumber == 2){
     message.reply("Parabens vc não se fudeu:(")
