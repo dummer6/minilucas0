@@ -23,9 +23,3 @@ bot.on('message', message => {
     };
 })
 
-let role = message.guild.roles.find  ("name" , "Admin");
-if(message.member.roles.has(hole.id) && message.content.startWith(";delete")){
-    msgDel = 10000000;
-let numberMessages = parseInt(msgDel);
-message.channel.fetchMessages({limit: numberMessages}).then(message => message.channel.bulkDelete(messages));
-}
