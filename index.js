@@ -19,6 +19,7 @@ bot.on('message', message => {
         "Bruno" : "Aquele talarico de merda ?",
         "Gustavo" : "Eu não entendo nada que ele digita porque ele é adalfabeto",
         "Me da um pedacinho" : "Peda para aprofessora de Etica igual aou Pedrão kkkk",
-        "João" : "Cara muito umilde e top"
+        "João" : "Cara muito umilde e top",
+        "Giovannie" : "Vou nem falar sobre, ele largou noix" 
     };
 })
