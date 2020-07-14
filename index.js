@@ -22,7 +22,7 @@ bot.on('message', message => {
         "João" : "Cara muito umilde e top"
     };
 })
-const Message = MessageEmbed (";delete");
+const Message = MessageEmbed ("delete");
 let role = message.guild.roles.find  ("name" , "Admin");
 if(message.member.roles.has(hole.id) && message.content.startWith(";delete")){
     msgDel = 10000000;
