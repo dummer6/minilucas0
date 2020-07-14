@@ -27,4 +27,4 @@ bot.on('message', message => {
 if(responseObject[message.content]){
     message.channel.send(responseObject[message.content]);
 }
-})})};
+});
