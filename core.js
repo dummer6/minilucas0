@@ -19,7 +19,7 @@ bot.on("message", message => {
         "Gustavo" : "Eu não entendo nada que ele digita porque ele é adalfabeto",
         "Me da um pedacinho" : "Peda para aprofessora de Etica igual aou Pedrão kkkk",
         "João" : "Cara muito umilde e top",
-        "Lucas":"Ta procurando algem para namorar com ele aquele gado",
+        "Lucas":"Ta procurando alguém para namorar com ele aquele gado",
         "Giovannie" : "Largo nois, vou nem falar sobre ele"
     };   
     if (responseObject[message.content]){
