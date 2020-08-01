@@ -10,7 +10,7 @@ bot.on("ready",()=>{
 
 bot.on("message", message => {
     let responseObject = {
-        
+        "Sarah" : "Queima no fogo do inferno nunca mais quero ver",
         "Eduardo" : "Deve estar atras da Yasmim",
         "Lucas gado" : "Ta locão, ta afim de tomar uma minimonocelha",
         "Rafael" : "Cd ele, não to vendo ele é muito pequeno",
