@@ -10,7 +10,7 @@ bot.on("ready",()=>{
 
 bot.on("message", message => {
     let responseObject = {
-        "Sarah" : "Ela ta nos crazy agor, mas nunca concordei",
+        "Sarah" : "Ela ta nos crazy agora, mas nunca concordei",
         "Eduardo" : "Deve estar atras da Yasmim",
         "Lucas gado" : "Ta locão, ta afim de tomar uma minimonocelha",
         "Rafael" : "Cd ele, não to vendo ele é muito pequeno",
@@ -19,7 +19,7 @@ bot.on("message", message => {
         "Gustavo" : "Eu não entendo nada que ele digita porque ele é adalfabeto",
         "Me da um pedacinho" : "Peda para aprofessora de Etica igual aou Pedrão kkkk",
         "João" : "Cara muito umilde e top",
-        "Lucas":"Ta na bad de novo pq foi iludio, mas n foi a Sarah tira essa ideia dea cabeca",
+        "Lucas":"Ta na bad de novo pq foi iludio, mas n foi a Sarah tira essa ideia da cabeca",
         "Giovannie" : "Largo nois, vou nem falar sobre ele"
     };   
     if (responseObject[message.content]){
