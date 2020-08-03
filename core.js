@@ -9,24 +9,22 @@ bot.on("ready",()=>{
 });
 
 bot.on("message", message => {
-    if(!msg.author.bot){
     let responseObject = {
-        "Sarah" : "Ela ta nos crazy agora, mas nunca concordei",
-        "Eduardo" : "Deve estar atras da Yasmim",
-        "Lucas gado" : "Ta locão, ta afim de tomar uma minimonocelha",
-        "Rafael" : "Cd ele, não to vendo ele é muito pequeno",
-        "Tadeu" : "Nada contra mas prefiro distancia",
+        "Sarah" : "Ela ta nos crazy agora, mas nunca concordei.",
+        "Eduardo" : "Deve estar atras da Yasmim.",
+        "Lucas gado" : "Ta locão, ta afim de tomar uma minimonocelha.",
+        "Rafael" : "Cd ele, não to vendo ele é muito pequeno.",
+        "Tadeu" : "Nada contra mas prefiro distancia.",
         "Bruno" : "Aquele talarico de merda ?",
-        "Gustavo" : "Eu não entendo nada que ele digita porque ele é adalfabeto",
-        "Me da um pedacinho" : "Peda para aprofessora de Etica igual aou Pedrão kkkk",
-        "João" : "Cara muito umilde e top",
-        "Lucas":"F",
-        "Giovannie" : "Largo nois, vou nem falar sobre ele",
-        "F":"F"
+        "Gustavo" : "Eu não entendo nada que ele digita porque ele é adalfabeto.",
+        "Me da um pedacinho" : "Peda para aprofessora de Etica igual aou Pedrão kkkk.",
+        "João" : "Cara muito umilde e top.",
+        "Lucas":"F.",
+        "Giovannie" : "Largo nois, vou nem falar sobre ele.",
+        "F":"F."
         
     };   
-}
-    if (responseObject[message.content]){
+if (responseObject[message.content]){
         message.channel.send(responseObject[message.content]);
     }
 })
