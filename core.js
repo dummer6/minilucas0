@@ -9,6 +9,7 @@ bot.on("ready",()=>{
 });
 
 bot.on("message", message => {
+    if(!msg.author.bot){
     let responseObject = {
         "Sarah" : "Ela ta nos crazy agora, mas nunca concordei",
         "Eduardo" : "Deve estar atras da Yasmim",
@@ -23,6 +24,7 @@ bot.on("message", message => {
         "Giovannie" : "Largo nois, vou nem falar sobre ele",
         
     };   
+}
     if (responseObject[message.content]){
         message.channel.send(responseObject[message.content]);
     }
