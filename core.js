@@ -21,6 +21,7 @@ bot.on("message", message => {
         "João" : "Cara muito umilde e top",
         "Lucas":"F",
         "Giovannie" : "Largo nois, vou nem falar sobre ele"
+        "F":"F"
     };   
     if (responseObject[message.content]){
         message.channel.send(responseObject[message.content]);
