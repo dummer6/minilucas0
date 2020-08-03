@@ -19,7 +19,7 @@ bot.on("message", message => {
         "Gustavo" : "Eu não entendo nada que ele digita porque ele é adalfabeto",
         "Me da um pedacinho" : "Peda para aprofessora de Etica igual aou Pedrão kkkk",
         "João" : "Cara muito umilde e top",
-        "Lucas":"Ta na bad de novo pq foi iludio, mas n foi a Sarah tira essa ideia da cabeca",
+        "Lucas":"F",
         "Giovannie" : "Largo nois, vou nem falar sobre ele"
     };   
     if (responseObject[message.content]){
