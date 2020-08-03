@@ -20,7 +20,7 @@ bot.on("message", message => {
         "Me da um pedacinho" : "Peda para aprofessora de Etica igual aou Pedrão kkkk",
         "João" : "Cara muito umilde e top",
         "Lucas":"F",
-        "Giovannie" : "Largo nois, vou nem falar sobre ele"
+        "Giovannie" : "Largo nois, vou nem falar sobre ele",
         "F":"F"
     };   
     if (responseObject[message.content]){
