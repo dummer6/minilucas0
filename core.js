@@ -29,11 +29,11 @@ if (responseObject[message.content]){
     }
 })
 
-bot.on("message",(msg)=>{
+bot.on("message",(msg) =>   {
     if(!msg.author.bot){
         const args = msg.content.split(" ");
         if(commands[args[0]]) commands[args[0]](bot,msg);
-    }
-});
+    }})
+
 
 bot.login(process.env.token);
