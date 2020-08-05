@@ -36,9 +36,9 @@ bot.on("message",(msg) =>   {
     }})
 
     bot.on("guildMemberAdd", member => {
-        member.guild.channels.get('730914946522546249').send(member.user.username + 'Bem vindo ao melhor serve de todos:)')
+        member.guild.channels.get('740375028415201290').send(member.user.username + 'Bem vindo ao melhor serve de todos:)')
         
-        
+
         })
 
 
