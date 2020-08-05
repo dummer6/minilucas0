@@ -37,7 +37,7 @@ bot.on("message",(msg) =>   {
 
     bot.on("guildMemberAdd", member => {
         member.guild.channels.get('740375028415201290').send(member.user.username + ':Bem vindo ao melhor serve de todos:)')
-    })
+    });
 
         bot.on("guildMemberRemove", member => {
         member.guild.channels.get('7740368716117835806').send(member.user.username + ':Adeus :cold_sweat: ')
