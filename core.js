@@ -36,11 +36,11 @@ bot.on("message",(msg) =>   {
     }})
 
     bot.on("guildMemberAdd", member => {
-        member.guild.channels.get('740375028415201290').send(member.mention.username + ':Bem vindo ao melhor serve de todos:)')
+        member.guild.channels.get('740375028415201290').send(member.user.username + ':Bem vindo ao melhor serve de todos:)')
     });
 
         bot.on("guildMemberRemove", member => {
-        member.guild.channels.get('740368716117835806').send(member.mention.username + ':Adeus :cold_sweat: ')
+        member.guild.channels.get('740368716117835806').send(member.user.username + ':Adeus :cold_sweat: ')
     })
 
 
