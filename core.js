@@ -40,7 +40,7 @@ bot.on("message",(msg) =>   {
     });
 
         bot.on("guildMemberRemove", member => {
-        member.guild.channels.get('7740368716117835806').send(member.user.username + ':Adeus :cold_sweat: ')
+        member.guild.channels.get('740368716117835806').send(member.user.username + ':Adeus :cold_sweat: ')
     })
 
 
