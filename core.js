@@ -15,10 +15,10 @@ bot.on("message", message => {
         "Lucas gado" : "Ta locão, ta afim de tomar uma minimonocelha.",
         "Rafael" : "Cd ele, não to vendo ele é muito pequeno.",
         "Tadeu" : "Nada contra mas prefiro distancia.",
-        "Bruno" : "Aquele talarico de merda ?",
-        "Gustavo" : "Eu não entendo nada que ele digita porque ele é adalfabeto.",
+        "Bruno" : "Provavelmente começou a destreuição esse fdp",
+        "Gustavo" : "Mt ridiculo e infantil.",
         "Me da um pedacinho" : "Peda para aprofessora de Etica igual aou Pedrão kkkk.",
-        "João" : "Cara muito umilde e top.",
+        "João" : "Tento destruir o serve traidor.",
         "Lucas":"F.",
         "Giovannie" : "Largo nois, vou nem falar sobre ele.",
         "F":"F."
@@ -36,7 +36,7 @@ bot.on("message",(msg) =>   {
     }})
 
     bot.on("guildMemberAdd", member => {
-        member.guild.channels.get('740718226639421491').send(member.user.username + ':Bem vindo ao melhor serve de todos:)')
+        member.guild.channels.get('740718226639421491').send (member.user.username + ':Bem vindo ao melhor serve de todos:)')
     });
 
         bot.on("guildMemberRemove", member => {
