@@ -15,10 +15,10 @@ bot.on("message", message => {
         "Lucas gado" : "Ta locão, ta afim de tomar uma minimonocelha.",
         "Rafael" : "Cd ele, não to vendo ele é muito pequeno.",
         "Tadeu" : "Nada contra mas prefiro distancia.",
-        "Bruno" : "Provavelmente começou a destreuição esse fdp",
+        "Bruno" : "SANDBOI",
         "Gustavo" : "Mt ridiculo e infantil.",
         "Me da um pedacinho" : "Peda para aprofessora de Etica igual aou Pedrão kkkk.",
-        "João" : "Tento destruir o serve traidor.",
+        "João" : "Gadooo.",
         "Lucas":"F.",
         "Giovannie" : "Largo nois, vou nem falar sobre ele.",
         "F":"F."
