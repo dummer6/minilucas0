@@ -17,12 +17,13 @@ bot.on("message", message => {
         "Rafael" : "Cd ele, não to vendo ele é muito pequeno.",
         "Tadeu" : "Nada contra mas prefiro distancia.",
         "Bruno" : "",
-        "Gustavo" : "Adalfabeto.",
+        "Gusta" : "Adalfabeto.",
         "Me da um pedacinho" : "Peda para aprofessora de Etica igual aou Pedrão kkkk.",
-        "João" : "Melhor professor de todos.",
+        "Jaca" : "Melhor professor de todos.",
         "Lucas":"Virando pro de fortnite.",
         "Giovannie" : "Largo nois, vou nem falar sobre ele.",
-        "F":"F."
+        "F":"F",
+        "Pedrão":"Deve estar no sap sap com a namorada.",
         
     };   
 if (responseObject[message.content]){
