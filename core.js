@@ -8,7 +8,7 @@ bot.on("ready",()=>{
     bot.user.setActivity("E batendo uma")
 });
 
-bot.on("message",(msg) => {
+bot.on("message", message => {
     let responseObject = {
         "Sarah" : "Tem down só pode.",
         "Eduardo" : "Deve estar atras de alguem com sarda.",
