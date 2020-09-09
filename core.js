@@ -8,8 +8,11 @@ bot.on("ready",()=>{
     bot.user.setActivity("E batendo uma")
 });
 
-bot.on("message", message => {
-    
+bot.on("message",(msg) => {
+    if(!msg.author.bot){
+        const args = msg.content.split(" ");
+        if(commands[args[0]]) commands[args[0]](bot,msg);
+
     let responseObject = {
         "Sarah" : "Tem down só pode.",
         "Eduardo" : "Deve estar atras de alguem com sarda.",
@@ -29,7 +32,7 @@ bot.on("message", message => {
 if (responseObject[message.content]){
         message.channel.send(responseObject[message.content]);
     }
-})
+}})
 
 bot.on("message",(msg) =>   {
     if(!msg.author.bot){
