@@ -9,7 +9,7 @@ bot.on("ready",()=>{
 });
 
 bot.on("message", message => {
-    if(!msg.author.bot)
+    
     let responseObject = {
         "Sarah" : "Tem down só pode.",
         "Eduardo" : "Deve estar atras de alguem com sarda.",
