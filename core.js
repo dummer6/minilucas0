@@ -9,17 +9,18 @@ bot.on("ready",()=>{
 });
 
 bot.on("message", message => {
+    if(!msg.author.bot)
     let responseObject = {
-        "Sarah" : "Ela ta nos crazy agora, mas nunca concordei.",
-        "Eduardo" : "Deve estar atras da Yasmim.",
+        "Sarah" : "Tem down só pode.",
+        "Eduardo" : "Deve estar atras de alguem com sarda.",
         "Lucas gado" : "Ta locão, ta afim de tomar uma minimonocelha.",
         "Rafael" : "Cd ele, não to vendo ele é muito pequeno.",
         "Tadeu" : "Nada contra mas prefiro distancia.",
-        "Bruno" : "SANDBOI",
-        "Gustavo" : "Mt ridiculo e infantil.",
+        "Bruno" : "",
+        "Gustavo" : "Adalfabeto.",
         "Me da um pedacinho" : "Peda para aprofessora de Etica igual aou Pedrão kkkk.",
-        "João" : "Gadooo.",
-        "Lucas":"F.",
+        "João" : "Melhor professor de todos.",
+        "Lucas":"Virando pro de fortnite.",
         "Giovannie" : "Largo nois, vou nem falar sobre ele.",
         "F":"F."
         
