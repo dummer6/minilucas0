@@ -25,7 +25,7 @@ bot.on("message",(msg) => {
         "Jaca" : "Melhor professor de todos.",
         "Lucas":"Virando pro de fortnite.",
         "Giovannie" : "Largo nois, vou nem falar sobre ele.",
-        "F":"F",
+        "F":"F.",
         "Pedrão":"Deve estar no sap sap com a namorada.",
         
     };   
